@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+float TinhS(int n)
+{
+	if (n==1)
+	   return 1/2;
+	else 
+	   return TinhS(n-1)+TinhS(1/n*(n+1)); 
+}
+int main()
+{
+	int n;
+	std::cout <<"Nha vao so nguyen n: ";
+	std::cin >>n;
+	std::cout <<"Tong cua S la: "<<TinhS(n); 
+}
